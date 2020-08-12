@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="PYTHON_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/ta" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Task1" isTestSource="false" />
+      <excludeFolder url="file://$MODULE_DIR$/Task1/.ipynb_checkpoints" />
+      <excludeFolder url="file://$MODULE_DIR$/Task1/AAPL-GOOGLE-AMZN-20200518V1" />
+      <excludeFolder url="file://$MODULE_DIR$/Task1/BigData" />
+      <excludeFolder url="file://$MODULE_DIR$/Task1/BigData2" />
+      <excludeFolder url="file://$MODULE_DIR$/Task1/members_600+_SPX_result" />
+      <excludeFolder url="file://$MODULE_DIR$/Task1/members_SPX_result" />
+      <excludeFolder url="file://$MODULE_DIR$/Task1/outliner_removed_hourly_intraday_dir" />
+      <excludeFolder url="file://$MODULE_DIR$/Task1/processed_data" />
+      <excludeFolder url="file://$MODULE_DIR$/Task1/processed_transformer_dir" />
+      <excludeFolder url="file://$MODULE_DIR$/Task1/raw_data_set" />
+      <excludeFolder url="file://$MODULE_DIR$/Task1/result" />
+      <excludeFolder url="file://$MODULE_DIR$/Task1/test_data" />
+      <excludeFolder url="file://$MODULE_DIR$/Task1/tmp_data" />
+      <excludeFolder url="file://$MODULE_DIR$/Task1/transformer_results" />
+      <excludeFolder url="file://$MODULE_DIR$/Task1/weekly_member_result" />
+      <excludeFolder url="file://$MODULE_DIR$/data" />
+      <excludeFolder url="file://$MODULE_DIR$/Task2/res" />
+      <excludeFolder url="file://$MODULE_DIR$/Task2/res/outliner_removed_hourly_intraday_dir" />
+      <excludeFolder url="file://$MODULE_DIR$/Task2/res/t0625-get_CSI800_unique_daily_history" />
+      <excludeFolder url="file://$MODULE_DIR$/Task2/res/t0625-get_CSI800_unique_history" />
+      <excludeFolder url="file://$MODULE_DIR$/Task2/res/t0625-get_outliner_removed_hourly_intraday_data" />
+      <excludeFolder url="file://$MODULE_DIR$/Task2/res/tmp_data" />
+      <excludeFolder url="file://$MODULE_DIR$/venv" />
+    </content>
+    <orderEntry type="jdk" jdkName="Python 3.6 (py36)" jdkType="Python SDK" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+  <component name="TestRunnerService">
+    <option name="PROJECT_TEST_RUNNER" value="pytest" />
+  </component>
+</module>

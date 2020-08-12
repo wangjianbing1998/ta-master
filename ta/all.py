@@ -1,252 +1,137 @@
 '''
-
-
-def acc_dist_index(high, low, close, volume, fillna=False):
 def acc_dist_index(high, low, close, volume, fillna=False):
 def adx(high, low, close, n=14, fillna=False):
-def adx(high, low, close, n=14, fillna=False):
-def adx_neg(high, low, close, n=14, fillna=False):
 def adx_neg(high, low, close, n=14, fillna=False):
 def adx_pos(high, low, close, n=14, fillna=False):
-def adx_pos(high, low, close, n=14, fillna=False):
-def adxr(high, low, close, n=14, fillna=False):
 def adxr(high, low, close, n=14, fillna=False):
 def alma(close, window=9, sigma=6, offset=0.85, fillna=False):
-def alma(close, window=9, sigma=6, offset=0.85, fillna=False):
-def ao(high, low, s=5, len=34, fillna=False):
 def ao(high, low, s=5, len=34, fillna=False):
 def aroon_down(close, n=25, fillna=False):
-def aroon_down(close, n=25, fillna=False):
-def aroon_oscillator(close, n=25, fillna=False):
 def aroon_oscillator(close, n=25, fillna=False):
 def aroon_up(close, n=25, fillna=False):
-def aroon_up(close, n=25, fillna=False):
-def average_true_range(high, low, close, n=14, fillna=False):
-def average_true_range(high, low, close, n=14, fillna=False):
-def average_true_range(high, low, close, n=14, fillna=False):
+def atm_stochastic_oscillator(high, low, close, n=14, fillna=False):
+def atm_stochastic_oscillator_signal(high, low, close, n=14, d_n=3, fillna=False):
+def atm_ultimate_oscillator(high, low, close, s=7, m=14, len=28, ws=4.0, wm=2.0, wl=1.0,
+def atr(close, n=1, period=10, fillna=False):
 def average_true_range(high, low, close, n=14, fillna=False):
 def average_true_range_percent(high, low, close, n=14, fillna=False):
-def average_true_range_percent(high, low, close, n=14, fillna=False):
-def bill_willams_alligator_jaw(high, low, oscillator='jaw', n1=13, n2=8, fillna=False):
 def bill_willams_alligator_jaw(high, low, oscillator='jaw', n1=13, n2=8, fillna=False):
 def bollinger_band_lower(close, n=14, a=0.02, fillna=False):
-def bollinger_band_lower(close,n=14,a=0.02,fillna=False):
 def bollinger_band_middle(close, n=14, fillna=False):
-def bollinger_band_middle(close,n=14,fillna=False):
 def bollinger_band_upper(close, n=14, a=0.02, fillna=False):
-def bollinger_band_upper(close,n=14,a=0.02,fillna=False):
-def bollinger_hband(close, n=20, ndev=2, fillna=False):
 def bollinger_hband(close, n=20, ndev=2, fillna=False):
 def bollinger_hband_indicator(close, n=20, ndev=2, fillna=False):
-def bollinger_hband_indicator(close, n=20, ndev=2, fillna=False):
-def bollinger_lband(close, n=20, ndev=2, fillna=False):
 def bollinger_lband(close, n=20, ndev=2, fillna=False):
 def bollinger_lband_indicator(close, n=20, ndev=2, fillna=False):
-def bollinger_lband_indicator(close, n=20, ndev=2, fillna=False):
-def bollinger_mavg(close, n=20, fillna=False):
 def bollinger_mavg(close, n=20, fillna=False):
 def cci(high, low, close, n=20, c=0.015, fillna=False):
-def cci(high, low, close, n=20, c=0.015, fillna=False):
-def chaikin_money_flow(high, low, close, volume, n=20, fillna=False):
 def chaikin_money_flow(high, low, close, volume, n=20, fillna=False):
 def chaikin_volatility_indicator(high, low, n=10, fillna=False):
-def chaikin_volatility_indicator(high, low, n=10, fillna=False):
-def chande_kroll_stop(high, low, close, stop_='short', n=9, x=1.5, q=14, fillna=False):
 def chande_kroll_stop(high, low, close, stop_='short', n=9, x=1.5, q=14, fillna=False):
 def chande_momentum_oscillator(close, n=10, fillna=False):
-def chande_momentum_oscillator(close, n=10, fillna=False):
-def chopping_index(high, low, close, n=10, fillna=False):
 def chopping_index(high, low, close, n=10, fillna=False):
 def commodity_channel_indicator(high, low, close, n=10, c=.015, fillna=False):
-def commodity_channel_indicator(high, low, close, n=10, c=.015, fillna=False):
-def compare(t1, t2, tr):
-def compare(t1, t2, tr):
-def connors_rsi(close, n1=3, n2=2, n3=100, fillna=False):
 def connors_rsi(close, n1=3, n2=2, n3=100, fillna=False):
 def coppock_curve(close, n1=10, n2=14, n3=11, fillna=False):
-def coppock_curve(close, n1=10, n2=14, n3=11, fillna=False):
-def cumulative_return(close, fillna=False):
 def cumulative_return(close, fillna=False):
 def daily_log_return(close, fillna=False):
-def daily_log_return(close, fillna=False):
 def daily_return(close, fillna=False):
-def daily_return(close, fillna=False):
-def dema(close, n, fillna=False):
-def dema(close, n, fillna=False):
-def detrended_price_oscillator(close, n=10, fillna=False):
+def dema(close, n=14, fillna=False):
 def detrended_price_oscillator(close, n=10, fillna=False):
 def directional_movement(close, ):
-def directional_movement(close, ):
 def directional_movement_index(high, low, close, n=14, fillna=False):
-def directional_movement_index(high, low, close, n=14, fillna=False):
-def donchian_channel_hband(close, n=20, fillna=False):
+def divergence(close, high, low, period=9, fillna=False):
 def donchian_channel_hband(close, n=20, fillna=False):
 def donchian_channel_hband_indicator(close, n=20, fillna=False):
-def donchian_channel_hband_indicator(close, n=20, fillna=False):
-def donchian_channel_lband(close, n=20, fillna=False):
 def donchian_channel_lband(close, n=20, fillna=False):
 def donchian_channel_lband_indicator(close, n=20, fillna=False):
-def donchian_channel_lband_indicator(close, n=20, fillna=False):
-def donchian_channels(high, low, n, fillna=False):
-def donchian_channels(high, low, n, fillna=False):
-def dpo(close, n=20, fillna=False):
+def donchian_channels(high, low, n=14, fillna=False):
 def dpo(close, n=20, fillna=False):
 def ease_of_movement(high, low, close, volume, n=20, fillna=False):
-def ease_of_movement(high, low, close, volume, n=20, fillna=False):
-def elder_ray_index(high, n=13, fillna=False):
 def elder_ray_index(high, n=13, fillna=False):
 def ema_indicator(close, n=12, fillna=False):
-def ema_indicator(close, n=12, fillna=False):
-def eom(high, low, volume, c=0.0001, fillna=False):
 def eom(high, low, volume, c=0.0001, fillna=False):
 def faster_stochastic_oscillator(high, low, close, type='k', n1=14, n2=3, fillna=False):
-def faster_stochastic_oscillator(high, low, close, type='k', n1=14, n2=3, fillna=False):
-def force_index(close, volume, n=2, fillna=False):
+def fisher_transform(close, fillna=False):
 def force_index(close, volume, n=2, fillna=False):
 def hlb(*args, fillna=False):
-def hlb(*args, fillna=False):
-def hma(close, n=14, fillna=False):
 def hma(close, n=14, fillna=False):
 def ichimoku_a(high, low, n1=9, n2=26, visual=False, fillna=False):
-def ichimoku_a(high, low, n1=9, n2=26, visual=False, fillna=False):
-def ichimoku_b(high, low, n2=26, n3=52, visual=False, fillna=False):
 def ichimoku_b(high, low, n2=26, n3=52, visual=False, fillna=False):
 def intreday_intensity_index(high, low, close, volume, fillna=False):
-def intreday_intensity_index(high, low, close, volume, fillna=False):
-def intreday_intensity_percent(high, low, close, volume, n=21, fillna=False):
 def intreday_intensity_percent(high, low, close, volume, n=21, fillna=False):
 def kama(close, n=10, pow1=2, pow2=30, fillna=False):
-def kama(close, n=10, pow1=2, pow2=30, fillna=False):
-def keltner_channel_central(high, low, close, n=10, fillna=False):
 def keltner_channel_central(high, low, close, n=10, fillna=False):
 def keltner_channel_hband(high, low, close, n=10, fillna=False):
-def keltner_channel_hband(high, low, close, n=10, fillna=False):
-def keltner_channel_hband_indicator(high, low, close, n=10, fillna=False):
 def keltner_channel_hband_indicator(high, low, close, n=10, fillna=False):
 def keltner_channel_lband(high, low, close, n=10, fillna=False):
-def keltner_channel_lband(high, low, close, n=10, fillna=False):
-def keltner_channel_lband_indicator(high, low, close, n=10, fillna=False):
 def keltner_channel_lband_indicator(high, low, close, n=10, fillna=False):
 def kst(close, r1=10, r2=15, r3=20, r4=30, n1=10, n2=10, n3=10, n4=15, fillna=False):
-def kst(close, r1=10, r2=15, r3=20, r4=30, n1=10, n2=10, n3=10, n4=15, fillna=False):
-def kst_sig(close, r1=10, r2=15, r3=20, r4=30, n1=10, n2=10, n3=10, n4=15, nsig=9, fillna=False):
 def kst_sig(close, r1=10, r2=15, r3=20, r4=30, n1=10, n2=10, n3=10, n4=15, nsig=9, fillna=False):
 def linear_regression(close, n=14, fillna=False):
-def linear_regression(close, n=14, fillna=False):
-def macd(close, n_fast=12, n_slow=26, fillna=False):
 def macd(close, n_fast=12, n_slow=26, fillna=False):
 def macd_diff(close, n_fast=12, n_slow=26, n_sign=9, fillna=False):
-def macd_diff(close, n_fast=12, n_slow=26, n_sign=9, fillna=False):
-def macd_signal(close, n_fast=12, n_slow=26, n_sign=9, fillna=False):
 def macd_signal(close, n_fast=12, n_slow=26, n_sign=9, fillna=False):
 def market_facilitation_index(high, low, volume, fillna=False):
-def market_facilitation_index(high, low, volume, fillna=False):
-def mass_index(high, low, n=9, n2=25, fillna=False):
 def mass_index(high, low, n=9, n2=25, fillna=False):
 def momentum(close, n=10, fillna=False):
-def momentum(close, n=10, fillna=False):
-def money_flow_index(high, low, close, volume, n=14, fillna=False):
+def momentum(closes):
 def money_flow_index(high, low, close, volume, n=14, fillna=False):
 def moving_average_convergence_divergence(close, n1_shoter=12, n2_longer=26, fillna=False):
-def moving_average_convergence_divergence(close, n1_shoter=12, n2_longer=26, fillna=False):
-def negative_volume_index(close, volume, fillna=False):
-def negative_volume_index(close, volume, fillna=False):
-def negative_volume_index(close, volume, fillna=False):
+def moving_count(close, period=14, fillna=False):
 def negative_volume_index(close, volume, fillna=False):
 def on_balance_volume(close, volume, fillna=False):
-def on_balance_volume(close, volume, fillna=False):
-def pivot_points_high(high, n=5, fillna=False):
 def pivot_points_high(high, n=5, fillna=False):
 def pivot_points_low(low, n=5, fillna=False):
-def pivot_points_low(low, n=5, fillna=False):
-def ppo(close, n1=12, n2=26, fillna=False):
 def ppo(close, n1=12, n2=26, fillna=False):
 def put_call_ratio():
-def put_call_ratio():
-def pvi(close, volume, fillna=False):
 def pvi(close, volume, fillna=False):
 def pvt(close, volume, fillna=False):
-def pvt(close, volume, fillna=False):
-def range_of_change(close, n=10, fillna=False):
 def range_of_change(close, n=10, fillna=False):
 def range_of_change_ratio(close, n=10, fillna=False):
-def range_of_change_ratio(close, n=10, fillna=False):
+def rate_of_change(close, n=14, fillna=False):
+def rmi(close, x=1, period=14, fillna=False):
+def rmi_expansion(close, high=None, low=None, period=14, n=14, variation=2, fillna=False):
 def rsi(close, n=14, fillna=False):
-def rsi(close, n=14, fillna=False):
+def sharp_ratio_atr(close, period=14, fillna=False):
+def sharp_ratio_volatility(close, volatility=None, period=14, fillna=False):
 def signal_line(close, n=9, n1=12, n2=26, fillna=False):
-def signal_line(close, n=9, n1=12, n2=26, fillna=False):
-def sma(close, n, fillna=False):
-def sma(close, n, fillna=False):
-def sma(close, n=10, fillna=False):
 def sma(close, n=10, fillna=False):
 def smoothed_moving_average(close, n=30, shift=1, fillna=False):
-def smoothed_moving_average(close, n=30, shift=1, fillna=False):
-def standard_deviation_channel(close, n=14, fillna=False):
+def spearman(close, period=9, fillna=False):
 def standard_deviation_channel(close, n=14, fillna=False):
 def standard_error(close, n=14, fillna=False):
-def standard_error(close, n=14, fillna=False):
-def stoch(high, low, close, n=14, fillna=False):
 def stoch(high, low, close, n=14, fillna=False):
 def stoch_signal(high, low, close, n=14, d_n=3, fillna=False):
-def stoch_signal(high, low, close, n=14, d_n=3, fillna=False):
-def stochastic_oscillator(high, low, close, n=3, fillna=False):
 def stochastic_oscillator(high, low, close, n=3, fillna=False):
 def stochastic_oscillator_d(high, low, close, n_k=14, n_d=3, fillna=False):
-def stochastic_oscillator_d(high, low, close, n_k=14, n_d=3, fillna=False):
-def stochastic_oscillator_k(high, low, close, n=14, fillna=False):
 def stochastic_oscillator_k(high, low, close, n=14, fillna=False):
 def stochastic_rsi(close, n=14, fillna=False):
-def stochastic_rsi(close, n=14, fillna=False):
-def triangular_moving_average(close, n=14, fillna=False):
+def td_count(close, x=4, period=9, variation=1, fillna=False):
+def trend_stall(close, period=9, fillna=False):
 def triangular_moving_average(close, n=14, fillna=False):
 def trix(close, n=14, fillna=False):
 def trix(close, n=15, fillna=False):
-def trix(close, n=15, fillna=False):
-def trix(close,n=14,fillna=False):
-def tsi(close, r=25, s=13, fillna=False):
 def tsi(close, r=25, s=13, fillna=False):
 def typical_price(high, low, close, fillna=False):
-def typical_price(high,low,close,fillna=False):
 def ultimate_oscillator(high, low, close, n=6, m=10, p=14, fillna=False):
-def ultimate_oscillator(high,low,close,n=6,m=10,p=14,fillna=False):
-def uo(high, low, close, s=7, m=14, len=28, ws=4.0, wm=2.0, wl=1.0,
 def uo(high, low, close, s=7, m=14, len=28, ws=4.0, wm=2.0, wl=1.0,
 def variable_horizontal_filter(close, n=14, fillna=False):
-def variable_horizontal_filter(close,n=14,fillna=False):
 def vidya(close, n=6, m=14, a=0.2, fillna=False):
-def vidya(close,n=6,m=14,a=0.2,fillna=False):
-def volatility_ratio(high, low, close, fillna=False):
 def volatility_ratio(high, low, close, fillna=False):
 def volume_ema(volume, n=14, fillna=False):
-def volume_ema(volume,n=14,fillna=False):
-def volume_price_trend(close, volume, fillna=False):
 def volume_price_trend(close, volume, fillna=False):
 def volume_wma(volume, n=14, fillna=False):
-def volume_wma(volume,n=14,fillna=False):
 def vortex_indicator_neg(high, low, close, n=14, fillna=False):
-def vortex_indicator_neg(high, low, close, n=14, fillna=False):
-def vortex_indicator_pos(high, low, close, n=14, fillna=False):
 def vortex_indicator_pos(high, low, close, n=14, fillna=False):
 def weighted_close(high, low, close, fillna=False):
-def weighted_close(high,low,close,fillna=False):
 def wma(close, n=10, fillna=False):
-def wma(close, n=10, fillna=False):
-def wr(high, low, close, lbp=14, fillna=False):
 def wr(high, low, close, lbp=14, fillna=False):
 
 
 
 
 '''
-
-
-
-
-import math
-from ta.utils import _fillna
-from .utils import *
-
-
 def rsi(close, n=14, fillna=False):
     """Relative Strength Index (RSI)
 
@@ -543,7 +428,7 @@ def ao(high, low, s=5, len=34, fillna=False):
 
     where
 
-    SMA °™ Simple Moving Average.
+    SMA ‚Äî Simple Moving Average.
 
     Args:
         high(pandas.Series): dataset 'High' column.
@@ -616,46 +501,11 @@ def kama(close, n=10, pow1=2, pow2=30, fillna=False):
     return kama
 
 
-def sma(close, n, fillna=False):
-    sma = close.rolling(n, min_periods=0).mean()
-    if fillna:
-        nvi = sma.replace([np.inf, -np.inf], np.nan).fillna(0)
-    return pd.Series(sma, name='sma')
+import math
 
-
-def negative_volume_index(close, volume, fillna=False):
-    """Negative Volume Index (NVI)
-
-    It is used to identify primary market(stock, index, ETF and etc) movements
-    and reversals. NVI is based on the running cumulative total of the percentage
-    price change for the days with volume lover than for the previous day's volume.
-     Basically, NVI reflects periods of declining volume.
-      Positive Volume Index (PVI) on the other side reflect days
-      when volume moved up (advancing volume).
-
-    https://www.marketvolume.com/technicalanalysis/negativevolumeindex.asp
-
-    Args:
-        close(pandas.Series): dataset 'Close' column.
-        volume(pandas.Series): dataset 'Volume' column.
-        fillna(bool): if True, fill nan values.
-
-    Returns:
-        pandas.Series: New feature generated.
-
-    """
-    nvi = pd.Series(data=np.nan, index=close.index, name='nvi')
-    nvi.iloc[0] = 1000
-    price_change = close.pct_change()
-    c = volume >= volume.shift(1)
-
-    for i in range(1, len(close)):
-        nvi.iloc[i] = nvi.iloc[i - 1]
-        if not c.iloc[i]:
-            nvi.iloc[i] *= (1 + price_change.iloc[i])
-    if fillna:
-        nvi = nvi.replace([np.inf, -np.inf], np.nan).fillna(0)
-    return pd.Series(nvi, name='nvi')
+from .utils import *
+from .utils import _fillna
+from .volatility import average_true_range
 
 
 def moving_average_convergence_divergence(close, n1_shoter=12, n2_longer=26, fillna=False):
@@ -791,11 +641,11 @@ def aroon_oscillator(close, n=25, fillna=False):
     '''
     Aroon_Oscillator
 
-    Aroon Oscillator=Aroon Up?Aroon Down
+    Aroon Oscillator=Aroon Up‚àíAroon Down
     Aroon Up=100*(25-Periods since 25-period High)/25
     Aroon Down=100*(25-Periods since 25-period Low)/25
 
-?
+‚Äã
     https://www.investopedia.com/terms/a/aroonoscillator.asp
 
     :param close:
@@ -815,50 +665,6 @@ def aroon_oscillator(close, n=25, fillna=False):
     if fillna:
         _aro = _fillna(_aro)
     return pd.Series(_aro, name='aro')
-
-
-def average_true_range(high, low, close, n=14, fillna=False):
-    '''
-    Average_true_range
-    TR=max(high-low,abs(high-close_prev),abs(low-close_prev))
-    ATR_0=mean(TR)
-    ATR_i=(ATR_(i-1)*(n-1)+TR_i)/n
-
-    https://en.wikipedia.org/wiki/Average_true_range
-
-
-    :param high:
-    :param low:
-    :param close:
-    :param n:
-    :param fillna:
-    :return:pandas.Series: New feature generated.
-    '''
-    t1 = high - low
-    t2 = abs(high - close.shift(1))
-    t3 = abs(low - close.shift(1))
-
-    tr = pd.Series(data=np.nan, index=close.index, name='tr')
-
-    def compare(t1, t2, tr):
-        c1 = (t1 > t2)
-        c2 = (t1 < t2)
-        if c1.any():
-            tr.loc[c1] = t1
-        if c2.any():
-            tr.loc[c2] = t2
-
-    compare(t1, t2, tr)
-    compare(t1, t3, tr)
-    compare(t2, t3, tr)
-
-    atr = pd.Series(data=np.nan, index=close.index, name='atr')
-    atr.iloc[0] = tr.mean()
-    for i in range(1, len(close)):
-        atr.iloc[i] = (atr.iloc[i - 1] * (n - 1) + tr.iloc[i]) / n
-    if fillna:
-        atr = _fillna(atr)
-    return pd.Series(atr, name='atr')
 
 
 def average_true_range_percent(high, low, close, n=14, fillna=False):
@@ -1112,7 +918,6 @@ def bollinger_band_middle(close, n=14, fillna=False):
     return close.rolling(n, min_periods=0).mean()
 
 
-@after_return()
 def bollinger_band_lower(close, n=14, a=0.02, fillna=False):
     '''
 
@@ -1125,12 +930,14 @@ def bollinger_band_lower(close, n=14, a=0.02, fillna=False):
     :param fillna:
     :return:
     '''
-    middle = bollinger_band_middle(close, n, fillna)
+    middle = bollinger_band_middle(close, n=n, fillna=fillna)
 
-    return middle - a * middle.rolling(n, min_periods=0).std()
+    value = middle - a * middle.rolling(n, min_periods=0).std()
+    if fillna:
+        value = value.replace([np.inf, -np.inf], np.nan).fillna(50)
+    return pd.Series(value, name='bollinger_band_lower')
 
 
-@after_return()
 def bollinger_band_upper(close, n=14, a=0.02, fillna=False):
     '''
 
@@ -1143,65 +950,12 @@ def bollinger_band_upper(close, n=14, a=0.02, fillna=False):
     :param fillna:
     :return:
     '''
-    middle = bollinger_band_middle(close, n, fillna)
+    middle = bollinger_band_middle(close, n=n, fillna=fillna)
 
-    return middle + a * middle.rolling(n, min_periods=0).std()
-
-
-@after_return()
-def directional_movement_index(high, low, close, n=14, fillna=False):
-    cs = close.shift(1)
-    pdm = high.combine(cs, lambda x1, x2: get_min_max(x1, x2, 'max'))
-    pdn = low.combine(cs, lambda x1, x2: get_min_max(x1, x2, 'min'))
-    tr = pdm - pdn
-
-    trs_initial = np.zeros(n - 1)
-    trs = np.zeros(len(close) - (n - 1))
-    trs[0] = tr.dropna()[0:n].sum()
-    tr = tr.reset_index(drop=True)
-    for i in range(1, len(trs) - 1):
-        trs[i] = trs[i - 1] - (trs[i - 1] / float(n)) + tr[n + i]
-
-    up = high - high.shift(1)
-    dn = low.shift(1) - low
-    pos = abs(((up > dn) & (up > 0)) * up)
-    neg = abs(((dn > up) & (dn > 0)) * dn)
-
-    dip_mio = np.zeros(len(close) - (n - 1))
-    dip_mio[0] = pos.dropna()[0:n].sum()
-
-    pos = pos.reset_index(drop=True)
-    for i in range(1, len(dip_mio) - 1):
-        dip_mio[i] = dip_mio[i - 1] - (dip_mio[i - 1] / float(n)) + pos[n + i]
-
-    din_mio = np.zeros(len(close) - (n - 1))
-    din_mio[0] = neg.dropna()[0:n].sum()
-
-    neg = neg.reset_index(drop=True)
-    for i in range(1, len(din_mio) - 1):
-        din_mio[i] = din_mio[i - 1] - (din_mio[i - 1] / float(n)) + neg[n + i]
-
-    dip = np.zeros(len(trs))
-    for i in range(len(trs)):
-        dip[i] = 100 * (dip_mio[i] / trs[i])
-
-    din = np.zeros(len(trs))
-    for i in range(len(trs)):
-        din[i] = 100 * (din_mio[i] / trs[i])
-
-    dx = 100 * np.abs((dip - din) / (dip + din))
-
-    adx = np.zeros(len(trs))
-    adx[n] = dx[0:n].mean()
-
-    for i in range(n + 1, len(adx)):
-        adx[i] = ((adx[i - 1] * (n - 1)) + dx[i - 1]) / float(n)
-
-    adx = np.concatenate((trs_initial, adx), axis=0)
-
-    adx = ema(ema(ema(adx, n), n), n)
-
-    return adx
+    value = middle + a * middle.rolling(n, min_periods=0).std()
+    if fillna:
+        value = value.replace([np.inf, -np.inf], np.nan).fillna(50)
+    return pd.Series(value, name='bollinger_band_upper')
 
 
 def range_of_change(close, n=10, fillna=False):
@@ -1340,7 +1094,7 @@ def directional_movement(close, ):
     pass
 
 
-def donchian_channels(high, low, n, fillna=False):
+def donchian_channels(high, low, n=14, fillna=False):
     '''
     Donchian Channels Indicator
 
@@ -1364,7 +1118,7 @@ def donchian_channels(high, low, n, fillna=False):
     return pd.Series(middle_channel, index=high.index, name='dc')
 
 
-def dema(close, n, fillna=False):
+def dema(close, n=14, fillna=False):
     '''
 
     Double Exponetial Moving Average
@@ -1622,8 +1376,8 @@ def stochastic_oscillator(high, low, close, n=3, fillna=False):
     :param fillna:
     :return:
     '''
-    lowest = low.rolling(n, fillna).min()
-    highest = high.rolling(n, fillna).max()
+    lowest = low.rolling(n).min()
+    highest = high.rolling(n).max()
 
     so = (close - lowest) / (highest - lowest) * 100
     if fillna:
@@ -1638,6 +1392,7 @@ def linear_regression(close, n=14, fillna=False):
 
     https://tulipindicators.org/linreg
 
+    https://teddykoker.com/2019/05/momentum-strategy-from-stocks-on-the-move-in-python/
 
     :param close:
     :param n:
@@ -1645,15 +1400,18 @@ def linear_regression(close, n=14, fillna=False):
     :return:
     '''
 
-    x_ = (n + 1) / 2
-    y_ = ema(close, n)
+    from scipy.stats import linregress
+    def momentum(closes):
+        returns = np.log(closes)
+        x = np.arange(len(returns))
+        slope, _, rvalue, _, _ = linregress(x, returns)
+        return ((1 + slope) ** 252) * (rvalue ** 2)  # annualize slope and multiply by R^2
 
-    belta = pd.Series(np.nan, index=close.index, name='Belta')
-    alpha = pd.Series(np.nan, index=close.index, name='Alpha')
+    lineareg = close.rolling(n).apply(momentum, raw=False)
+    if fillna:
+        lineareg = _fillna(lineareg)
+    return pd.Series(lineareg, index=close.index, name='linear_regression')
 
-    for t in range(len(close)):
-        # belta.iloc[t]=
-        pass
 
 
 def ppo(close, n1=12, n2=26, fillna=False):
@@ -1817,7 +1575,7 @@ def standard_deviation_channel(close, n=14, fillna=False):
     '''
     std = close.rolling(n, min_periods=0).std()
 
-    std = std.applay(lambda x: np.sqrt(x))
+    std = std.apply(lambda x: np.sqrt(x))
     if fillna:
         std = _fillna(std)
 
@@ -1835,7 +1593,7 @@ def standard_error(close, n=14, fillna=False):
     '''
     std = close.rolling(n, min_periods=0).std()
 
-    stde = std.applay(lambda x: np.sqrt(x) / np.sqrt(n))
+    stde = std.apply(lambda x: np.sqrt(x) / np.sqrt(n))
     if fillna:
         stde = _fillna(stde)
 
@@ -2052,235 +1810,6 @@ def cumulative_return(close, fillna=False):
     if fillna:
         cr = cr.replace([np.inf, -np.inf], np.nan).fillna(method='backfill')
     return pd.Series(cr, name='cum_ret')
-
-
-def acc_dist_index(high, low, close, volume, fillna=False):
-    """Accumulation/Distribution Index (ADI)
-
-    Acting as leading indicator of price movements.
-
-    https://en.wikipedia.org/wiki/Accumulation/distribution_index
-
-    Args:
-        high(pandas.Series): dataset 'High' column.
-        low(pandas.Series): dataset 'Low' column.
-        close(pandas.Series): dataset 'Close' column.
-        volume(pandas.Series): dataset 'Volume' column.
-        fillna(bool): if True, fill nan values.
-
-    Returns:
-        pandas.Series: New feature generated.
-    """
-    clv = ((close - low) - (high - close)) / (high - low)
-    clv = clv.fillna(0.0)  # float division by zero
-    ad = clv * volume
-    ad = ad + ad.shift(1, fill_value=ad.mean())
-    if fillna:
-        ad = ad.replace([np.inf, -np.inf], np.nan).fillna(0)
-    return pd.Series(ad, name='adi')
-
-
-def on_balance_volume(close, volume, fillna=False):
-    """On-balance volume (OBV)
-
-    It relates price and volume in the stock market. OBV is based on a
-    cumulative total volume.
-
-    https://en.wikipedia.org/wiki/On-balance_volume
-
-    Args:
-        close(pandas.Series): dataset 'Close' column.
-        volume(pandas.Series): dataset 'Volume' column.
-        fillna(bool): if True, fill nan values.
-
-    Returns:
-        pandas.Series: New feature generated.
-    """
-    df = pd.DataFrame([close, volume]).transpose()
-    df['OBV'] = np.nan
-    c1 = close < close.shift(1)
-    c2 = close > close.shift(1)
-    if c1.any():
-        df.loc[c1, 'OBV'] = - volume
-    if c2.any():
-        df.loc[c2, 'OBV'] = volume
-    obv = df['OBV'].cumsum()
-    if fillna:
-        obv = _fillna(obv)
-    return pd.Series(obv, name='obv')
-
-
-def chaikin_money_flow(high, low, close, volume, n=20, fillna=False):
-    """Chaikin Money Flow (CMF)
-
-    It measures the amount of Money Flow Volume over a specific period.
-
-    http://stockcharts.com/school/doku.php?id=chart_school:technical_indicators:chaikin_money_flow_cmf
-
-    Args:
-        high(pandas.Series): dataset 'High' column.
-        low(pandas.Series): dataset 'Low' column.
-        close(pandas.Series): dataset 'Close' column.
-        volume(pandas.Series): dataset 'Volume' column.
-        n(int): n period.
-        fillna(bool): if True, fill nan values.
-
-    Returns:
-        pandas.Series: New feature generated.
-    """
-    mfv = ((close - low) - (high - close)) / (high - low)
-    mfv = mfv.fillna(0.0)  # float division by zero
-    mfv *= volume
-    cmf = (mfv.rolling(n, min_periods=0).sum()
-           / volume.rolling(n, min_periods=0).sum())
-    if fillna:
-        cmf = cmf.replace([np.inf, -np.inf], np.nan).fillna(0)
-    return pd.Series(cmf, name='cmf')
-
-
-def force_index(close, volume, n=2, fillna=False):
-    """Force Index (FI)
-
-    It illustrates how strong the actual buying or selling pressure is. High
-    positive values mean there is a strong rising trend, and low values signify
-    a strong downward trend.
-
-    http://stockcharts.com/school/doku.php?id=chart_school:technical_indicators:force_index
-
-    Args:
-        close(pandas.Series): dataset 'Close' column.
-        volume(pandas.Series): dataset 'Volume' column.
-        n(int): n period.
-        fillna(bool): if True, fill nan values.
-
-    Returns:
-        pandas.Series: New feature generated.
-    """
-    fi = close.diff(n) * volume.diff(n)
-    if fillna:
-        fi = fi.replace([np.inf, -np.inf], np.nan).fillna(0)
-    return pd.Series(fi, name='fi_' + str(n))
-
-
-def ease_of_movement(high, low, close, volume, n=20, fillna=False):
-    """Ease of movement (EoM, EMV)
-
-    It relate an asset's price change to its volume and is particularly useful
-    for assessing the strength of a trend.
-
-    https://en.wikipedia.org/wiki/Ease_of_movement
-
-    Args:
-        high(pandas.Series): dataset 'High' column.
-        low(pandas.Series): dataset 'Low' column.
-        close(pandas.Series): dataset 'Close' column.
-        volume(pandas.Series): dataset 'Volume' column.
-        n(int): n period.
-        fillna(bool): if True, fill nan values.
-
-    Returns:
-        pandas.Series: New feature generated.
-    """
-    emv = (high.diff(1) + low.diff(1)) * (high - low) / (2 * volume)
-    emv = emv.rolling(n, min_periods=0).mean()
-    if fillna:
-        emv = emv.replace([np.inf, -np.inf], np.nan).fillna(0)
-    return pd.Series(emv, name='eom_' + str(n))
-
-
-def volume_price_trend(close, volume, fillna=False):
-    """Volume-price trend (VPT)
-
-    Is based on a running cumulative volume that adds or substracts a multiple
-    of the percentage change in share price trend and current volume, depending
-    upon the investment's upward or downward movements.
-
-    https://en.wikipedia.org/wiki/Volume%E2%80%93price_trend
-
-    Args:
-        close(pandas.Series): dataset 'Close' column.
-        volume(pandas.Series): dataset 'Volume' column.
-        n(int): n period.
-        fillna(bool): if True, fill nan values.
-
-    Returns:
-        pandas.Series: New feature generated.
-    """
-    vpt = volume * ((close - close.shift(1, fill_value=close.mean())) / close.shift(1, fill_value=close.mean()))
-    vpt = vpt.shift(1, fill_value=vpt.mean()) + vpt
-    if fillna:
-        vpt = vpt.replace([np.inf, -np.inf], np.nan).fillna(0)
-    return pd.Series(vpt, name='vpt')
-
-
-def negative_volume_index(close, volume, fillna=False):
-    """Negative Volume Index (NVI)
-    https://tulipindicators.org/nvi
-    http://stockcharts.com/school/doku.php?id=chart_school:technical_indicators:negative_volume_inde
-
-    The Negative Volume Index (NVI) is a cumulative indicator that uses the
-    change in volume to decide when the smart money is active. Paul Dysart
-    first developed this indicator in the 1930s. [...] Dysart's Negative Volume
-    Index works under the assumption that the smart money is active on days
-    when volume decreases and the not-so-smart money is active on days when
-    volume increases.
-
-    The cumulative NVI line was unchanged when volume increased from one
-    period to the other. In other words, nothing was done. Norman Fosback, of
-    Stock Market Logic, adjusted the indicator by substituting the percentage
-    price change for Net Advances.
-
-    This implementation is the Fosback version.
-
-    If today's volume is less than yesterday's volume then:
-        nvi(t) = nvi(t-1) * ( 1 + (close(t) - close(t-1)) / close(t-1) )
-    Else
-        nvi(t) = nvi(t-1)
-
-    Please note: the "stockcharts.com" example calculation just adds the
-    percentange change of price to previous NVI when volumes decline; other
-    sources indicate that the same percentage of the previous NVI value should
-    be added, which is what is implemented here.
-
-    Args:
-        close(pandas.Series): dataset 'Close' column.
-        volume(pandas.Series): dataset 'Volume' column.
-        fillna(bool): if True, fill nan values with 1000.
-
-    Returns:
-        pandas.Series: New feature generated.
-
-    See also:
-    https://en.wikipedia.org/wiki/Negative_volume_index
-    """
-    price_change = close.pct_change()
-    vol_decrease = (volume.shift(1) > volume)
-
-    nvi = pd.Series(data=np.nan, index=close.index, dtype='float64', name='nvi')
-
-    nvi.iloc[0] = 1000
-    for i in range(1, len(nvi)):
-        if vol_decrease.iloc[i]:
-            nvi.iloc[i] = nvi.iloc[i - 1] * (1.0 + price_change.iloc[i])
-        else:
-            nvi.iloc[i] = nvi.iloc[i - 1]
-
-    if fillna:
-        # IDEA: There shouldn't be any na; might be better to throw exception
-        nvi = nvi.replace([np.inf, -np.inf], np.nan).fillna(1000)
-
-    return pd.Series(nvi, name='nvi')
-
-
-# TODO
-def put_call_ratio():
-    # will need options volumes for this put/call ratio
-
-    """Put/Call ratio (PCR)
-    https://en.wikipedia.org/wiki/Put/call_ratio
-    """
-    # TODO
-    return
 
 
 def macd(close, n_fast=12, n_slow=26, fillna=False):
@@ -2836,7 +2365,7 @@ def kst_sig(close, r1=10, r2=15, r3=20, r4=30, n1=10, n2=10, n3=10, n4=15, nsig=
 
 
 def ichimoku_a(high, low, n1=9, n2=26, visual=False, fillna=False):
-    """Ichimoku Kink®≠ Hy®≠ (Ichimoku)
+    """Ichimoku Kink≈ç Hy≈ç (Ichimoku)
 
     It identifies the trend and look for potential signals within that trend.
 
@@ -2867,7 +2396,7 @@ def ichimoku_a(high, low, n1=9, n2=26, visual=False, fillna=False):
 
 
 def ichimoku_b(high, low, n2=26, n3=52, visual=False, fillna=False):
-    """Ichimoku Kink®≠ Hy®≠ (Ichimoku)
+    """Ichimoku Kink≈ç Hy≈ç (Ichimoku)
 
     It identifies the trend and look for potential signals within that trend.
 
@@ -3023,7 +2552,7 @@ def bollinger_lband(close, n=20, ndev=2, fillna=False):
     """Bollinger Bands (BB)
 
     Lower band at K times an N-period standard deviation below the moving
-    average (MA ? Kdeviation).
+    average (MA ‚àí Kdeviation).
 
     https://en.wikipedia.org/wiki/Bollinger_Bands
 
@@ -3310,3 +2839,459 @@ def donchian_channel_lband_indicator(close, n=20, fillna=False):
     if fillna:
         lband = lband.replace([np.inf, -np.inf], np.nan).fillna(0)
     return pd.Series(lband, name='dcilband')
+
+
+def acc_dist_index(high, low, close, volume, fillna=False):
+    """Accumulation/Distribution Index (ADI)
+
+    Acting as leading indicator of price movements.
+
+    https://en.wikipedia.org/wiki/Accumulation/distribution_index
+
+    Args:
+        high(pandas.Series): dataset 'High' column.
+        low(pandas.Series): dataset 'Low' column.
+        close(pandas.Series): dataset 'Close' column.
+        volume(pandas.Series): dataset 'Volume' column.
+        fillna(bool): if True, fill nan values.
+
+    Returns:
+        pandas.Series: New feature generated.
+    """
+    clv = ((close - low) - (high - close)) / (high - low)
+    clv = clv.fillna(0.0)  # float division by zero
+    ad = clv * volume
+    ad = ad + ad.shift(1, fill_value=ad.mean())
+    if fillna:
+        ad = ad.replace([np.inf, -np.inf], np.nan).fillna(0)
+    return pd.Series(ad, name='adi')
+
+
+def on_balance_volume(close, volume, fillna=False):
+    """On-balance volume (OBV)
+
+    It relates price and volume in the stock market. OBV is based on a
+    cumulative total volume.
+
+    https://en.wikipedia.org/wiki/On-balance_volume
+
+    Args:
+        close(pandas.Series): dataset 'Close' column.
+        volume(pandas.Series): dataset 'Volume' column.
+        fillna(bool): if True, fill nan values.
+
+    Returns:
+        pandas.Series: New feature generated.
+    """
+    df = pd.DataFrame([close, volume]).transpose()
+    df['OBV'] = np.nan
+    c1 = close < close.shift(1)
+    c2 = close > close.shift(1)
+    if c1.any():
+        df.loc[c1, 'OBV'] = - volume
+    if c2.any():
+        df.loc[c2, 'OBV'] = volume
+    obv = df['OBV'].cumsum()
+    if fillna:
+        obv = _fillna(obv)
+    return pd.Series(obv, name='obv')
+
+
+def chaikin_money_flow(high, low, close, volume, n=20, fillna=False):
+    """Chaikin Money Flow (CMF)
+
+    It measures the amount of Money Flow Volume over a specific period.
+
+    http://stockcharts.com/school/doku.php?id=chart_school:technical_indicators:chaikin_money_flow_cmf
+
+    Args:
+        high(pandas.Series): dataset 'High' column.
+        low(pandas.Series): dataset 'Low' column.
+        close(pandas.Series): dataset 'Close' column.
+        volume(pandas.Series): dataset 'Volume' column.
+        n(int): n period.
+        fillna(bool): if True, fill nan values.
+
+    Returns:
+        pandas.Series: New feature generated.
+    """
+    mfv = ((close - low) - (high - close)) / (high - low)
+    mfv = mfv.fillna(0.0)  # float division by zero
+    mfv *= volume
+    cmf = (mfv.rolling(n, min_periods=0).sum()
+           / volume.rolling(n, min_periods=0).sum())
+    if fillna:
+        cmf = cmf.replace([np.inf, -np.inf], np.nan).fillna(0)
+    return pd.Series(cmf, name='cmf')
+
+
+def force_index(close, volume, n=2, fillna=False):
+    """Force Index (FI)
+
+    It illustrates how strong the actual buying or selling pressure is. High
+    positive values mean there is a strong rising trend, and low values signify
+    a strong downward trend.
+
+    http://stockcharts.com/school/doku.php?id=chart_school:technical_indicators:force_index
+
+    Args:
+        close(pandas.Series): dataset 'Close' column.
+        volume(pandas.Series): dataset 'Volume' column.
+        n(int): n period.
+        fillna(bool): if True, fill nan values.
+
+    Returns:
+        pandas.Series: New feature generated.
+    """
+    fi = close.diff(n) * volume.diff(n)
+    if fillna:
+        fi = fi.replace([np.inf, -np.inf], np.nan).fillna(0)
+    return pd.Series(fi, name='fi_' + str(n))
+
+
+def ease_of_movement(high, low, close, volume, n=20, fillna=False):
+    """Ease of movement (EoM, EMV)
+
+    It relate an asset's price change to its volume and is particularly useful
+    for assessing the strength of a trend.
+
+    https://en.wikipedia.org/wiki/Ease_of_movement
+
+    Args:
+        high(pandas.Series): dataset 'High' column.
+        low(pandas.Series): dataset 'Low' column.
+        close(pandas.Series): dataset 'Close' column.
+        volume(pandas.Series): dataset 'Volume' column.
+        n(int): n period.
+        fillna(bool): if True, fill nan values.
+
+    Returns:
+        pandas.Series: New feature generated.
+    """
+    emv = (high.diff(1) + low.diff(1)) * (high - low) / (2 * volume)
+    emv = emv.rolling(n, min_periods=0).mean()
+    if fillna:
+        emv = emv.replace([np.inf, -np.inf], np.nan).fillna(0)
+    return pd.Series(emv, name='eom_' + str(n))
+
+
+def volume_price_trend(close, volume, fillna=False):
+    """Volume-price trend (VPT)
+
+    Is based on a running cumulative volume that adds or substracts a multiple
+    of the percentage change in share price trend and current volume, depending
+    upon the investment's upward or downward movements.
+
+    https://en.wikipedia.org/wiki/Volume%E2%80%93price_trend
+
+    Args:
+        close(pandas.Series): dataset 'Close' column.
+        volume(pandas.Series): dataset 'Volume' column.
+        n(int): n period.
+        fillna(bool): if True, fill nan values.
+
+    Returns:
+        pandas.Series: New feature generated.
+    """
+    vpt = volume * ((close - close.shift(1, fill_value=close.mean())) / close.shift(1, fill_value=close.mean()))
+    vpt = vpt.shift(1, fill_value=vpt.mean()) + vpt
+    if fillna:
+        vpt = vpt.replace([np.inf, -np.inf], np.nan).fillna(0)
+    return pd.Series(vpt, name='vpt')
+
+
+def negative_volume_index(close, volume, fillna=False):
+    """Negative Volume Index (NVI)
+    https://tulipindicators.org/nvi
+    http://stockcharts.com/school/doku.php?id=chart_school:technical_indicators:negative_volume_inde
+
+    The Negative Volume Index (NVI) is a cumulative indicator that uses the
+    change in volume to decide when the smart money is active. Paul Dysart
+    first developed this indicator in the 1930s. [...] Dysart's Negative Volume
+    Index works under the assumption that the smart money is active on days
+    when volume decreases and the not-so-smart money is active on days when
+    volume increases.
+
+    The cumulative NVI line was unchanged when volume increased from one
+    period to the other. In other words, nothing was done. Norman Fosback, of
+    Stock Market Logic, adjusted the indicator by substituting the percentage
+    price change for Net Advances.
+
+    This implementation is the Fosback version.
+
+    If today's volume is less than yesterday's volume then:
+        nvi(t) = nvi(t-1) * ( 1 + (close(t) - close(t-1)) / close(t-1) )
+    Else
+        nvi(t) = nvi(t-1)
+
+    Please note: the "stockcharts.com" example calculation just adds the
+    percentange change of price to previous NVI when volumes decline; other
+    sources indicate that the same percentage of the previous NVI value should
+    be added, which is what is implemented here.
+
+    Args:
+        close(pandas.Series): dataset 'Close' column.
+        volume(pandas.Series): dataset 'Volume' column.
+        fillna(bool): if True, fill nan values with 1000.
+
+    Returns:
+        pandas.Series: New feature generated.
+
+    See also:
+    https://en.wikipedia.org/wiki/Negative_volume_index
+    """
+    price_change = close.pct_change()
+    vol_decrease = (volume.shift(1) > volume)
+
+    nvi = pd.Series(data=np.nan, index=close.index, dtype='float64', name='nvi')
+
+    nvi.iloc[0] = 1000
+    for i in range(1, len(nvi)):
+        if vol_decrease.iloc[i]:
+            nvi.iloc[i] = nvi.iloc[i - 1] * (1.0 + price_change.iloc[i])
+        else:
+            nvi.iloc[i] = nvi.iloc[i - 1]
+
+    if fillna:
+        # IDEA: There shouldn't be any na; might be better to throw exception
+        nvi = nvi.replace([np.inf, -np.inf], np.nan).fillna(1000)
+
+    return pd.Series(nvi, name='nvi')
+
+
+# TODO
+def put_call_ratio():
+    # will need options volumes for this put/call ratio
+
+    """Put/Call ratio (PCR)
+    https://en.wikipedia.org/wiki/Put/call_ratio
+    """
+    # TODO
+    return
+
+
+@after_return()
+def rmi(close, x=1, period=14, fillna=False):
+    diff = close.diff(x)
+    which_dn = diff < 0
+
+    up, dn = diff, diff * 0
+    up[which_dn], dn[which_dn] = 0, -up[which_dn]
+
+    emaup = ema(up, period, fillna)
+    emadn = ema(dn, period, fillna)
+
+    rmi_ = 100 * emaup / (emaup + emadn)
+    if fillna:
+        rmi_ = rmi_.replace([np.inf, -np.inf], np.nan).fillna(50)
+    return pd.Series(rmi_, name='rmi')
+
+
+@after_return()
+def rmi_expansion(close, high=None, low=None, period=14, n=14, variation=2, fillna=False):
+    if variation == 1:
+        ma = close - sma(close, period)
+        which_dn = ma < 0
+
+        up, dn = ma, ma * 0
+        up[which_dn], dn[which_dn] = 0, -up[which_dn]
+
+    elif variation == 2:
+        diff = close.diff(1)
+        which_dn = diff < 0
+
+        up, dn = diff, diff * 0
+        up[which_dn], dn[which_dn] = 0, -up[which_dn]
+
+    elif variation == 3:
+        diff = close.diff(1)
+        which_dn = diff < 0
+
+        up, dn = diff, diff * 0
+        up[which_dn], dn[which_dn] = 0, 1
+        up[diff > 0], dn[diff > 0] = 1, 0
+    elif variation == 4:
+        ma = close - sma(low, period)
+        which_dn = close > sma(high, period)
+
+        up, dn = ma, ma * 0
+        up[which_dn], dn[which_dn] = 0, abs(close - sma(high, period))
+    elif variation == 5:
+        ma = close - sma(low, period)
+
+        up, dn = ma, ma * 0
+        up[close > sma(high, period)], dn[close > sma(low, period)] = 0, 1
+        up[close < sma(high, period)], dn[close < sma(high, period)] = 1, 0
+    else:
+        raise ValueError(f'Unexpected variation ={variation}, Expecting 1,2,3,4,5')
+    emaup = ema(up, n, fillna)
+    emadn = ema(dn, n, fillna)
+
+    rsi = 100 * emaup / (emaup + emadn)
+    if fillna:
+        rsi = rsi.replace([np.inf, -np.inf], np.nan).fillna(50)
+    return pd.Series(rsi, name=f'rsi_variation_{variation}')
+
+
+@after_return()
+def spearman(close, period=9, fillna=False):
+    '''
+
+https://zh.wikipedia.org/wiki/%E6%96%AF%E7%9A%AE%E5%B0%94%E6%9B%BC%E7%AD%89%E7%BA%A7%E7%9B%B8%E5%85%B3%E7%B3%BB%E6%95%B0
+
+    :param close:
+    :param period:
+    :param fillna:
+    :return:
+    '''
+
+    close_1 = close.shift(-period)
+    square_ = (close - close_1) ** 2
+    sum_square = square_.rolling(period).sum()
+    p = 1 - 6 * sum_square / (period * (period ** 2 - 1))
+    return p
+
+
+@after_return()
+def fisher_transform(close, fillna=False):
+    '''
+
+    https://en.wikipedia.org/wiki/Fisher_transformation
+
+    https://www.daytrading.com/fisher-transform
+
+
+    Fisher Transform
+
+    :param close:
+    :param fillna:
+    :return:
+    '''
+    x = (close - close.min()) / (close.max() - close.min()) * 2 - 1
+    ft = pd.Series([10 * math.log((1 + x_) / (1 - x_ + 1e-3) + 1e-3) for x_ in x.values], index=close.index)
+    return ft
+
+
+@after_return()
+def td_count(close, x=4, period=9, variation=1, fillna=False):
+    if variation == 1:
+        diff = close.diff(x)
+        which_dn = diff > 0
+        up = 0 * diff
+        up[which_dn] = 1
+    elif variation == 2:
+        pass
+
+    else:
+        raise ValueError(f'Unexpected variation ={variation}, Expecting 1,2 ')
+    td = sma(up, period, fillna)
+    if fillna:
+        td = td.replace([np.inf, -np.inf], np.nan).fillna(50)
+    return pd.Series(td, name='td_count')
+
+
+@after_return()
+def trend_stall(close, period=9, fillna=False):
+    roc = rate_of_change(close, period, fillna)
+    roc_diff1 = roc.diff(1)
+    roc_diff2 = roc.diff(2)
+
+    signal = roc * 0
+    signal[(roc_diff1 > roc_diff2) & (roc < roc_diff1)] = 1
+    if fillna:
+        signal = signal.replace([np.inf, -np.inf], np.nan).fillna(50)
+    return pd.Series(signal, name='trend_stall')
+
+
+@after_return()
+def atm_stochastic_oscillator_signal(high, low, close, n=14, d_n=3, fillna=False):
+    sos = stoch_signal(high, low, close, n, d_n=d_n, fillna=fillna)
+    sos_sma = sma(sos, n)
+    wnr_ = wr(high, low, sos_sma, n)
+
+    wrn_ = sma(wnr_, n)
+
+    return wrn_
+
+
+@after_return()
+def atm_stochastic_oscillator(high, low, close, n=14, fillna=False):
+    sos = stoch(high, low, close, n, fillna=fillna)
+    sos_sma = sma(sos, n)
+    wnr_ = wr(high, low, sos_sma, n)
+    wrn_ = sma(wnr_, n)
+
+    return wrn_
+
+
+@after_return()
+def atm_ultimate_oscillator(high, low, close, s=7, m=14, len=28, ws=4.0, wm=2.0, wl=1.0,
+                            fillna=False):
+    sos = uo(high, low, close, s=s, m=m, len=len, ws=ws, wm=wm, wl=wl,
+             fillna=fillna)
+    sos_sma = sma(sos, m)
+    wnr_ = wr(high, low, sos_sma, m)
+    wrn_ = sma(wnr_, m)
+
+    return wrn_
+
+
+@after_return()
+def rate_of_change(close, n=14, fillna=False):
+    '''
+
+    ROC(Rate Of Change).
+    ROC=(Close-Close.shift(-n))/(Close.shift(-n))*100%
+
+    https://www.investopedia.com/terms/p/pricerateofchange.asp
+
+    :return:
+    '''
+
+    roc = (close - close.shift(-n)) / (close.shift(-n)) * 100.0
+    return roc
+
+
+@after_return()
+def atr(close, n=1, period=10, fillna=False):
+    close_ = close / close.shift(-1) - 1
+    atr_ = sma(close_, period)
+    return atr_
+
+
+@after_return()
+def sharp_ratio_volatility(close, volatility=None, period=14, fillna=False):
+    if volatility is None:
+        volatility = close
+    srv = close / sma(close, period) / volatility
+    return srv
+
+
+@after_return()
+def sharp_ratio_atr(close, period=14, fillna=False):
+    atr_ = atr(close, period)
+    sra = close / sma(close, period) / atr_
+    return sra
+
+
+@after_return()
+def divergence(close, high, low, period=9, fillna=False):
+    A1 = rsi(close, 14, fillna)
+    A2 = rate_of_change(close, 14, fillna)
+
+    A3 = wr(high, low, A1, period)
+    A4 = wr(high, low, A2, period)
+
+    A5 = A3 - A4
+
+    return A5
+
+
+@after_return()
+def moving_count(close, period=14, fillna=False):
+    sma_ = sma(close, period)
+    which_dn = close > sma_
+    data = close * 0
+    data[which_dn] = 1
+    mc = sma(data, period)
+    return mc

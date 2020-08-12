@@ -77,6 +77,15 @@ def plot_(data, show_date=SHOW_DATE):
     date_.plot(ax=plt.gca())
 
 
+def plt_show(series: pd.Series, title='', show=False):
+    plt.figure()
+    series.plot(figsize=(24, 6))
+    plt.title(title)
+    plt.savefig(title + '.jpg')
+    if show:
+        plt.show()
+
+
 def get_result(func, *args, show=True, show_date=20, **kwargs):
     from ..data.get_data import get_yahoo_data
     data = get_yahoo_data()
@@ -117,8 +126,8 @@ def after_return(*bargs, target=None, **bkwargs):
             res = func(*args, **kwargs)
 
             def fillna_target(value, name=None):
-                if kwargs['fillna']:
-                    value = _fillna(value)
+                # if kwargs['fillna']:
+                value = _fillna(value)
                 name = name or func.__name__
                 return pd.Series(value, index=args[0].index, name=name)
 
@@ -137,14 +146,52 @@ def eval_function_by_name(fn_name_args):
 
 def show_funcion(file_path):
     lines = []
-    for line in open(file_path):
+    for line in open(file_path, encoding='utf-8'):
         if line.strip().startswith('def'):
             line = line.strip()
             lines.append(line)
+    lines = list(set(lines))
 
     lines.sort()
+
+    print(len(lines))
     for line in lines:
         print(line)
+    return lines
+
+
+def generate_wrapper(file_path):
+    high_lines = []
+    close_lines = []
+    lines = show_funcion(file_path)
+    for line in lines:
+        function_name = line.split()[1].split('(')[0]
+        line = ''.join(line.split()[1:])
+
+        left = line.split('(')[0]
+        right = line.split('(')[-1]
+        right = right.replace('close', 'df[close]')
+        right = right.replace('high', 'df[high]')
+        right = right.replace('low', 'df[low]')
+        right = right.replace('volume', 'df[volume]')
+        right = right.replace('fillna=False', 'fillna=fillna')[:-1]
+        line = left + '(' + right
+        new_line = f"df[colprefix+'my_{function_name}']=" + line
+        # print(line,'->',new_line)
+        if 'high' in new_line or 'low' in new_line or 'volume' in new_line:
+
+            high_lines.append(new_line)
+        else:
+            close_lines.append(new_line)
+
+    high_lines = list(set(high_lines))
+    close_lines = list(set(close_lines))
+    high_lines.sort()
+    close_lines.sort()
+    [print(line) for line in close_lines]
+    [print(line) for line in high_lines]
+
+    print(file_path, len(high_lines + close_lines))
 
 
 if __name__ == '__main__':
@@ -152,4 +199,10 @@ if __name__ == '__main__':
     # plot_k(df)
     # plt.show()
     show_funcion('all.py')
+    # generate_wrapper('momentum.py')
+    # generate_wrapper('others.py')
+    # generate_wrapper('trend.py')
+    # generate_wrapper('volatility.py')
+    # generate_wrapper('volume.py')
+    # generate_wrapper('my.py')
     # pass
